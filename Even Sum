@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int sum = 0;
+    int i = 2;  // start from first even number
+
+    while (i <= n) {
+        sum += i;
+        i += 2;  // move to the next even number
+    }
+
+    printf("%d\n", sum);
+    return 0;
+}
